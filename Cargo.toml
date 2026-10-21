@@ -6,3 +6,8 @@ edition = "2024"
 [dependencies]
 axum = "0.8.9"
 tokio = "1.54.0"
+
+
+[[bin]]
+name = "axum_postgres_diesel"
+path = "src/main.rs"
