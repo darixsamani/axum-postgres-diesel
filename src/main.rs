@@ -1,7 +1,7 @@
 use axum::{Json, Router, routing::get};
-use crate::models::product::Product;
+use crate::schemas::product::Product;
 
-pub mod models;
+pub mod schemas;
 
 
 async fn get_product() -> Json<Product>{
