@@ -1,10 +1,7 @@
 use axum::{Json, Router, routing::get};
+use crate::models::product::Product;
 
-#[derive(serde::Serialize, serde::Deserialize)]
-pub struct Product{
-    pub id: u32,
-    pub name: String
-}
+pub mod models;
 
 
 async fn get_product() -> Json<Product>{
