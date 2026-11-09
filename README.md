@@ -60,7 +60,7 @@ cp .env.example .env
 Then update `.env` to match your local setup:
 
 ```env
-DATABASE_URL=postgres://darix:your_password@localhost:5432/axum_postgres_diesel
+DATABASE_URL=postgres://your_user:your_password@localhost:5432/axum_postgres_diesel
 ```
 
 | Variable | Description | Example |
