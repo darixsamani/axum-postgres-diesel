@@ -19,7 +19,7 @@ async fn create_product(Json(payload): Json<Product>) -> Json<Product>{
     Json(payload)
 }
 
-#[tokio::main(flavor = "current_thread")]
+#[tokio::main]
 async fn main() {
 
     // 1. Initialize the tracing subscriber to output logs to stdout
