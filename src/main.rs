@@ -17,6 +17,9 @@ async fn create_product(Json(payload): Json<Product>) -> Json<Product>{
 
 #[tokio::main(flavor = "current_thread")]
 async fn main() {
+
+    tracing_subscriber::fmt().init();
+    
     let app = Router::new()
     .route("/product", get(get_product).post(create_product));
 
